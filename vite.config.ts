@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
 
 export default defineConfig({
+  base: '/deploying-helsi-form',
   plugins: [
     react(),
     svgr({
