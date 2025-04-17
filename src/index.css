@@ -1,0 +1,20 @@
+body {
+  margin: 0 auto;
+  width: 75%;
+  font-family: 'NotoSans', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src:
+      url('/fonts/NotoSans-Regular.woff2') format('woff2'),
+      url('/fonts/NotoSans-Regular.woff') format('woff'),
+      url('/fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

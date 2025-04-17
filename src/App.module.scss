@@ -1,0 +1,26 @@
+@use "./theme/constans/colors.module" as colors;
+
+.wrap {
+  border: 1px solid colors.$primary-color;
+}
+
+.wrapFrom {
+  padding: 14px;
+}
+
+.patientData {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerTabl {
+  background: colors.$secondary-color;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  h2 {
+    color: colors.$white-color
+  }
+}

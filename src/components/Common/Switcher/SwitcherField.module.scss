@@ -1,0 +1,49 @@
+@use "../../../theme/constans/colors.module" as colors;
+
+$switch-width: 38px;
+$switch-height: 8px;
+$thumb-size: 18px;
+$transition: 0.3s;
+
+.switch {
+  width: $switch-width;
+  height: $switch-height;
+  border: 1px solid colors.$primary-color;
+  border-radius: 999px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: background-color $transition ease, border-color $transition ease;
+  position: absolute;
+  right: -4px;
+  top: 18px;
+  background: colors.$primary-color;
+
+  & + input {
+    border-bottom: 1px dotted colors.$primary-color;
+  }
+}
+
+.thumb {
+  width: $thumb-size;
+  height: $thumb-size;
+  background-color: #959595;
+  border-radius: 50%;
+  transition: transform $transition ease;
+  transform: translateX(-4px);
+  border: 1px solid #999;
+}
+
+.checked {
+  background-color: colors.$white-color;
+  border-color: colors.$primary-color;
+
+  & + input {
+    border-bottom: 1px solid colors.$primary-color;
+  }
+
+  .thumb {
+    background-color: colors.$white-color;
+    transform: translateX(22px);
+  }
+}

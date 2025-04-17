@@ -1,0 +1,12 @@
+@use "../../../theme/constans/colors.module" as colors;
+
+.submitButton {
+  background: transparent;
+  border: 1px solid colors.$primary-color;
+  padding: 4px 10px;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
